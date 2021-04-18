@@ -1,0 +1,19 @@
+.ingredient-list {
+    color: #b5b5b5;
+    padding: 2%;
+    height: 100%;
+}
+
+.ingredient {
+    &:hover {
+        color: #fff;
+    }
+}
+
+.selected-ingredient {
+
+}
+
+.ingredient-img {
+    width: 400px;
+}
