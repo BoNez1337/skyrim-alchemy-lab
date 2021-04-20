@@ -1,5 +1,5 @@
-<div class="row w-100"> 
-    <div class="ingredient-list col-3 bg-dark overflow-auto">
+<div class="row w-100 h-100"> 
+    <div class="ingredient-list col-3 bg-dark overflow-auto h-100">
         <h3 *ngFor="let ingredient of ingredients" (click)="selectIngredient(ingredient)" class="ingredient">{{ ingredient.name }}</h3>
     </div>
     <div class="selected-ingredient col-9" *ngIf="selectedIngredient">
@@ -8,6 +8,14 @@
         </div>
         <div class="row">
             <h2>{{ selectedIngredient.name }}</h2>
+        </div>
+        <div class ="row">
+            <div class="col-6"><h3>{{ selectedIngredient?.effects[0] }}</h3></div>
+            <div class="col-6"><h3>{{ selectedIngredient?.effects[1] }}</h3></div>
+        </div>
+        <div class ="row">
+            <div class="col-6"><h3>{{ selectedIngredient?.effects[2] }}</h3></div>
+            <div class="col-6"><h3>{{ selectedIngredient?.effects[3] }}</h3></div>
         </div>
     </div>
 </div>
