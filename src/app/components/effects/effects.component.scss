@@ -1,0 +1,11 @@
+.effects-list {
+    color: #b5b5b5;
+    padding: 2%;
+    height: 100%;
+}
+
+.effect {
+    &:hover {
+        color: #fff;
+    }
+}

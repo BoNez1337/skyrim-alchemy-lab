@@ -1,19 +1,41 @@
 .ingredient-list {
-    color: #b5b5b5;
+    color: #fff;
     padding: 2%;
-    height: 100%;
+    max-height: 100%;
 }
 
 .ingredient {
     &:hover {
-        color: #fff;
+        color: #b5b5b5;
     }
 }
 
 .selected-ingredient {
+    color: #fff;
+}
 
+.details-box {
+    width: 50%;
+    margin: 5% auto 5% auto;
+    padding: 2% 5%;
+}
+
+.ing-col {
+    padding: 2%;
 }
 
 .ingredient-img {
     width: 400px;
+    margin: auto;
+}
+
+.main {
+    max-height: 100%;
+    background-image: url("../../../assets/bg-img.jpg");
+    background-size: contain;
+}
+
+.ing-name {
+    margin-bottom: 5%;
+    font-weight: bold;
 }

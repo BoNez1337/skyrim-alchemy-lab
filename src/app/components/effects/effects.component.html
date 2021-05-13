@@ -1,1 +1,21 @@
-<h1>Effects</h1>
+<div class="row w-100 h-100"> 
+    <div class="effects-list col-3 bg-dark overflow-auto h-100">
+        <h3 *ngFor="let effect of effects" (click)="selectEffect(effect)" class="effect">{{ effect.name }}</h3>
+    </div>
+    <div class="selected-effect col-9" *ngIf="selectedEffect">
+        <!-- <div class="row">
+            <img class="ingredient-img" [src]="selectedIngredient.image" [alt]="selectedIngredient.name"/>
+        </div>
+        <div class="row">
+            <h2>{{ selectedIngredient.name }}</h2>
+        </div>
+        <div class ="row">
+            <div class="col-6"><h3>{{ selectedIngredient?.effects[0] }}</h3></div>
+            <div class="col-6"><h3>{{ selectedIngredient?.effects[1] }}</h3></div>
+        </div>
+        <div class ="row">
+            <div class="col-6"><h3>{{ selectedIngredient?.effects[2] }}</h3></div>
+            <div class="col-6"><h3>{{ selectedIngredient?.effects[3] }}</h3></div>
+        </div> -->
+    </div>
+</div>

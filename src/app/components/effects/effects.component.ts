@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import * as data from '../../../data/effects.json';
 
 @Component({
   selector: 'app-effects',
@@ -6,5 +7,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./effects.component.scss']
 })
 export class EffectsComponent {
-  title = 'sk-alchemy-lab';
+    public effects = data.effects;
+    public selectedEffect;
+
+    constructor() {
+        console.log(this.effects)
+    }
+
+    public selectEffect(effect) {
+        console.log(effect);
+        if (effect) {
+            this.selectedEffect = effect;
+        }
+    }
 }
